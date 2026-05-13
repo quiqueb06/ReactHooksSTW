@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f0f12;
+  font-family: system-ui, sans-serif;
+}
+
+.card {
+  background-color: #1a1a1f;
+  border: 1px solid #2a2a30;
+  border-radius: 16px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 340px;
+}
+
+.badge {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #a89060;
+  background-color: #25200f;
+  padding: 3px 12px;
+  border-radius: 20px;
+  border: 1px solid #3a3010;
+}
+
+.mode-pill {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 4px 16px;
+  border-radius: 20px;
+}
+
+.mode-work {
+  background-color: #2a1010;
+  color: #e05040;
+  border: 1px solid #4a1a1a;
+}
+
+.mode-break {
+  background-color: #0e2418;
+  color: #40b870;
+  border: 1px solid #1a4a2a;
+}
+
+.clock {
+  font-family: monospace;
+  font-size: 52px;
+  font-weight: 700;
+  color: #f0f0e8;
+  letter-spacing: -2px;
+}
+
+.progress-bg {
+  width: 100%;
+  height: 4px;
+  background-color: #2a2a30;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.9s linear;
+}
+
+.progress-work {
+  background-color: #e05040;
+}
+
+.progress-break {
+  background-color: #40b870;
+}
+
+.btn-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: system-ui, sans-serif;
+  transition: opacity 0.15s;
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.btn-start {
+  background-color: #e05040;
+  color: #fff;
+}
+
+.btn-pause {
+  background-color: #2a2a30;
+  color: #aaa;
+  border: 1px solid #3a3a40;
+}
+
+.btn-reset {
+  background-color: #222228;
+  color: #888;
+  border: 1px solid #2e2e36;
+}
+
+.btn-save {
+  background-color: #0e2418;
+  color: #40b870;
+  border: 1px solid #1a4a2a;
+}
+
+.config-row {
+  display: flex;
+  gap: 16px;
+}
+
+.config-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.config-input {
+  width: 60px;
+  padding: 6px 8px;
+  background-color: #222228;
+  border: 1px solid #2e2e36;
+  border-radius: 6px;
+  color: #f0f0e8;
+  font-family: monospace;
+  font-size: 14px;
+  text-align: center;
+}
+
+.config-input:disabled {
+  opacity: 0.4;
+}
+
+.stats-row {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.stat-box {
+  flex: 1;
+  background-color: #222228;
+  border: 1px solid #2e2e36;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.stat-val {
+  font-family: monospace;
+  font-size: 22px;
+  font-weight: 700;
+  color: #e05040;
+}
+
+.stat-val.green {
+  color: #40b870;
+}
+
+.stat-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #555;
+}
+
+.session-list {
+  width: 100%;
+  border-top: 1px solid #2a2a30;
+  padding-top: 16px;
+}
+
+.session-title {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.session-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #1e1e22;
+  font-size: 12px;
+}
+
+.session-row:last-child {
+  border-bottom: none;
+}
+
+.session-row.partial {
+  opacity: 0.65;
+}
+
+.session-num {
+  font-family: monospace;
+  font-size: 11px;
+  color: #555;
+  min-width: 24px;
+}
+
+.session-type {
+  flex: 1;
+  color: #888;
+}
+
+.session-dur {
+  font-family: monospace;
+  font-size: 11px;
+  color: #40b870;
+}
+
+.session-time {
+  font-family: monospace;
+  font-size: 11px;
+  color: #555;
+}
